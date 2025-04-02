@@ -11,6 +11,7 @@ import MiniNav from './MiniNav';
 import Scroll from './Scroll';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
+import { IoDocumentTextOutline } from 'react-icons/io5';
 
 
 function Contact() {
@@ -84,17 +85,18 @@ function Contact() {
                         </Link>
 
                     </div>
+                    
                     <div className='card mt-2 p-1 skill-card w-100'>
-                        <Link to="tel:+918799153326" target='_blank' className='logo text-decoration-none' >
+                        <a href="/public/KEVAL_CHAUHAN.pdf" className='logo text-decoration-none' download>
                             <div className="m-3 small d-flex align-items-center justify-content-between">
                                 <div className='icon-text'>
-                                    Phone
+                                    Resume
                                 </div>
                                 <div className="icon">
-                                    <PiPhoneThin fontSize="1.2em" />
+                                    <IoDocumentTextOutline fontSize="1.2em" />
                                 </div>
                             </div>
-                        </Link>
+                        </a>
                     </div>
                 </div>
                 <div className="d-md-flex w-100">

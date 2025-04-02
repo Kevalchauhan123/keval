@@ -32,14 +32,24 @@ function Footer() {
                         </Link>
                     </ul>
                     <ul className='small text-secondary'>
-                    <Link to="/work" className='text-decoration-none text-secondary'>
-                        Work
-                    </Link>
+                        <Link to="/work" className='text-decoration-none text-secondary'>
+                            Work
+                        </Link>
                     </ul>
                     <ul className='small text-secondary'>
                         <Link to="/contact" className='text-decoration-none text-secondary' >
                             Contact
                         </Link>
+                    </ul>
+                </div>
+                <div className='mt-5'>
+                    <ul>
+                        Documents
+                    </ul>
+                    <ul className='small text-secondary'>
+                        <a href="/public/KEVAL_CHAUHAN.pdf" className='logo text-decoration-none text-secondary' download>
+                            Resume
+                        </a>
                     </ul>
                 </div>
                 <div className='mt-5'>

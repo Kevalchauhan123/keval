@@ -15,7 +15,6 @@ import Scroll from './Scroll';
 import Footer from './Footer';
 // import shape from '../assets/shape.svg'
 
-
 function Home() {
   return (
     <div className=''>
@@ -134,8 +133,10 @@ function Home() {
           </div>
           <Footer />
         </div>
+        
       </div>
     </div >
+    
   );
 }
 

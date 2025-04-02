@@ -4,6 +4,9 @@ import Nav from './Nav';
 import MiniNav from './MiniNav';
 import Footer from './Footer';
 import Scroll from './Scroll';
+import { Link } from 'react-router-dom';
+import { PiGithubLogoThin } from 'react-icons/pi';
+import { IoDocumentTextOutline } from "react-icons/io5";
 
 function Work({ title, subtitle, shortDescription, fullDescription }) {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -96,6 +99,18 @@ function WorkCard() {
                                     My work engineers seamless digital ecosystems, fusing Yii2 mastery with automation prowess. From intuitive platforms to intelligent data extraction, my creations are robust, adaptive, and meticulously crafted.
                                 </div>
                             </div>
+                        </div>
+                        <div className="icon-card card my-2 p-1">
+                        <a href="/public/KEVAL_CHAUHAN.pdf" className='logo text-decoration-none' download>
+                                <div className="m-3 small d-flex align-items-center justify-content-between">
+                                    <div className='icon-text'>
+                                        Resume
+                                    </div>
+                                    <div className="icon">
+                                        <IoDocumentTextOutline fontSize="1.2em" />
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                         {projects.map((project, index) => (
                             <Work
