@@ -25,7 +25,6 @@ function Home() {
               <img src={image} height="1000px" width="100%" className='profile-image' />
               <Nav />
               <MiniNav />
-
             </div>
           </div>
         </div>
