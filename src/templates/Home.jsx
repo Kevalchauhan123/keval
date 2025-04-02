@@ -33,7 +33,7 @@ function Home() {
           <div className='row'>
             <div className='col-12 col-md-12 col-lg-8 mb-2'>
               <div className="card pb-1">
-                <div className="m-3 p-4">
+                <div className="m-3 p-3 p-md-4">
                   <div className='d-flex align-items-center justify-content-start pb-3 pt-3'>
                     <div className="me-4">
                       <img src={image} width="70" height="70" className='rounded-circle' />
@@ -112,7 +112,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className='card p-5'>
+          <div className='card p-3 p-md-5'>
             <div className='d-flex justify-content-between'>
               <p className='about-text'>About </p>
               <Link to="/about" className='logo text-decoration-none' >
