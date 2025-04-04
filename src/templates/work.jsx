@@ -5,7 +5,7 @@ import MiniNav from './MiniNav';
 import Footer from './Footer';
 import Scroll from './Scroll';
 import { Link } from 'react-router-dom';
-import { PiGithubLogoThin } from 'react-icons/pi';
+import { MdOutlineCastForEducation } from "react-icons/md";
 import { IoDocumentTextOutline } from "react-icons/io5";
 
 function Work({ title, subtitle, shortDescription, fullDescription }) {
@@ -31,9 +31,15 @@ function Work({ title, subtitle, shortDescription, fullDescription }) {
                         </div>
                     )}
                 </div>
-                <div className="text-end small text-secondary read-more" onClick={toggleDescription} style={{ cursor: 'pointer' }}>
-                    {isExpanded ? 'Read Less' : 'Read More'}
-                </div>
+                {fullDescription && (
+                    <div
+                        className="text-end small text-secondary read-more"
+                        onClick={toggleDescription}
+                        style={{ cursor: 'pointer' }}
+                    >
+                        {isExpanded ? 'Read Less' : 'Read More'}
+                    </div>
+                )}
             </div>
         </div>
     );
@@ -41,6 +47,21 @@ function Work({ title, subtitle, shortDescription, fullDescription }) {
 
 function WorkCard() {
     const projects = [
+        {
+            title: "Bechelor",
+            subtitle: "LJ University",
+            shortDescription: "C.S.E ( Computer Science and Engineering )",
+        },
+        {
+            title: "Internship",
+            subtitle: "Trusol",
+            shortDescription: "Web Developer - December 2023 to may 2024",
+        },
+        {
+            title: "Work",
+            subtitle: "Trusol",
+            shortDescription: "Web Developer - may 2024 to Present",
+        },
         {
             title: "Artwork, Artist & Gallery Collaboration Platform",
             subtitle: "Creative Marketplace & Collaboration Platform - php(Yii2)",
@@ -99,18 +120,6 @@ function WorkCard() {
                                     My work engineers seamless digital ecosystems, fusing Yii2 mastery with automation prowess. From intuitive platforms to intelligent data extraction, my creations are robust, adaptive, and meticulously crafted.
                                 </div>
                             </div>
-                        </div>
-                        <div className="icon-card card my-2 p-1">
-                        <a href="/public/KEVAL_CHAUHAN.pdf" className='logo text-decoration-none' download>
-                                <div className="m-3 small d-flex align-items-center justify-content-between">
-                                    <div className='icon-text'>
-                                        Resume
-                                    </div>
-                                    <div className="icon">
-                                        <IoDocumentTextOutline fontSize="1.2em" />
-                                    </div>
-                                </div>
-                            </a>
                         </div>
                         {projects.map((project, index) => (
                             <Work

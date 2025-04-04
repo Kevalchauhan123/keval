@@ -16,7 +16,9 @@ import Footer from './Footer';
 // import shape from '../assets/shape.svg'
 
 function Home() {
+
   return (
+    
     <div className=''>
       <div className='row'>
         <div className='col-12 col-md-6'>
@@ -98,7 +100,7 @@ function Home() {
                 </Link>
               </div>
               <div className="icon-card card mb-2 p-1 bg-light ">
-                <Link to="/contact"className='logo text-decoration-none' >
+                <Link to="/contact" className='logo text-decoration-none' >
                   <div className="m-3 small d-flex align-items-center justify-content-between">
                     <div className='icon-text text-dark'>
                       Contact Me
@@ -115,7 +117,7 @@ function Home() {
             <div className='d-flex justify-content-between'>
               <p className='about-text'>About </p>
               <Link to="/about" className='logo text-decoration-none' >
-              <div className='ms-5 next-icon'><PiArrowCircleUpRightThin fontSize="2.5em" /></div>
+                <div className='ms-5 next-icon'><PiArrowCircleUpRightThin fontSize="2.5em" /></div>
               </Link>
             </div>
             <div className='about-me small mt-5 pt-5 pe-4'>
@@ -132,10 +134,10 @@ function Home() {
           </div>
           <Footer />
         </div>
-        
+
       </div>
     </div >
-    
+
   );
 }
 
